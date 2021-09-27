@@ -1,2 +1,4 @@
-We couldn't find all the names because not everyone was on github. We also didn't know which pd people were in.
+We couldn't find all the names because not everyone was on github, and we didn't know which pd people were in.
 We solved these problems by asking people and using "lol#" and "lul#" to fill in the missing people
+Finally though, we got ahold of all the names and sorted them into their respective pds. Alse, it was decided that using a dicitonary might be more appropriate in the situation than lists
+I personally learned how random.choice() works
