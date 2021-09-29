@@ -1,7 +1,12 @@
 The Nice Mice: Noakai Aronesty, Ryan Wang, Eliza Knapp
 K06: StI/O: Divine your Destiny!
 
-We opened the file and we read it into a dictReader (an iterable dictionary-ish object). 
-We then separated the keys and values into two lists and removed the last line ("Total: 99.8").
-Finally, we used `random.choices()`. 
-This took the keys and values, and read the values as percent chances to get their repective keys and choose one using a weighted randomized selcection algorithm.
+We opened the file and we read it into a dictReader (an iterable object that contains a dictionary of each line).
+
+We then iterated through each line (each dictionary), separated the two values into two lists (`job_class`, `percentage`) and removed the last dictionary ("Total: 99.8").
+
+Finally, we used `random.choices()`, which takes two lists: the values to choose from (`job_class`) and the corresponding probability of selection (`percentage`). 
+
+`k=1` means we are only selecting once. 
+
+This implements the weighted randomized selection.
