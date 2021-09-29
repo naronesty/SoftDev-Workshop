@@ -1,6 +1,6 @@
-# The Nice Mice: Noakai Aronesty, Ryan Wang, Eliza Knapp
+# K06: StI/O: Divine your Destiny!
 
-### K06: StI/O: Divine your Destiny!
+### The Nice Mice: Noakai Aronesty, Ryan Wang, Eliza Knapp
 
 We opened the file and we read it into a dictReader (an iterable object that contains a dictionary of each line).
 
