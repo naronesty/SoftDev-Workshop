@@ -1,3 +1,9 @@
+Wombats (Eliza Knapp, Josephine Lee, Noakai Aronesty)
+SoftDev
+K08 -- Cross Pollination and Virtual Insanity
+2021-09-30
+
+
 We ran the command in the terminal and it seemed like nothing happened.
 BUT!! Then we went to the home directory and cded into the new myherozero
 folder that was created. We found 3 folders and a pyvenv.cfg file.
