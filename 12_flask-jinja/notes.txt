@@ -7,9 +7,9 @@ First, we looked at and ran app.py. We noticed that in addition to the
 usual no hablo queso function, there was also a return template function.
 We saw that there was a template folder and the function in app.py
 refered to the html file inside the template folder. We wondered how it 
-knows without a path that model_tmplt exists. We assumed that it was the 
-same as the static folder where it is known that it exists. To show this,
-we changed the name of the templates folder to hello. It no longer worked.
+knows without a path that model_tmplt exists. We assumed that it was similar to the 
+static folder in that flask knows that it exists and how to render its contents. 
+To test this, we changed the name of the templates folder to hello. It no longer worked.
 We got an error- template not found error, because it couldn't find the 
 template file.
 
@@ -32,4 +32,7 @@ Q1: Can all of your teammates confidently predict the URL to use to load this  p
 Yes. It is http://127.0.0.1:5000/my_foist_template.
 
 Q2: What is the significance of each argument?
-First is the file in the templates folder, then are variables used in that file.
+The first argument is the file in the templates folder. All subsequent arguments are 
+variables stored in the referenced template file in curly brackets {}, and their values
+can be set. A variable without a value is not displayed, but the variable's value is
+displayed if it is set to one.
