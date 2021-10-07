@@ -3,7 +3,7 @@
 # K12 -- ...or The Only Constant is Change?
 # 2021-10-07
 
-from flask import Flask #Q0: What happens if you remove render_template from this line?
+from flask import Flask, render_template #Q0: What happens if you remove render_template from this line?
 app = Flask(__name__)
 
 @app.route("/")
