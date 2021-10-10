@@ -1,0 +1,33 @@
+<!-- #Team Name: TeamMAN: Andy Lin, Noakai Aronesty, Michael Borczuk
+#SoftDev
+#K13 --  template html for flask website returning results from K06
+#2021-10-08 -->
+
+<!DOCTYPE html>
+
+<html>
+    <title>Tablified go brrrr</title>
+    <body>
+        <h1>A page to return results from that random job generator</h1>
+        Team TeamMAN: Andy Lin, Noakai Aronesty, Michael Borczuk
+        <br>
+        <h2>Random job generator result: {{ result }}</h2>
+        <h3>Chance of returning each job:</h3>
+        <table rules="all" border="1">
+            <tr>
+                <th>Job Occupation</th>
+                <th>Percentage</th>
+            </tr>
+            {% for i in range(count) %}
+                <tr>
+                    <td>
+                        {{job[i]}}
+                    </td>
+                    <td>
+                        {{percentage[i]}}%
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
