@@ -1,7 +1,7 @@
 The Adjective Nouns -- Andrew Juang, Noakai Aronesty, Eric Guo
 SoftDev
 K14 -- Form and Function
-Oct 2021
+2021-10-14
 
 Predictions:
 -When you run the flask application, it will open the root directory function disp_loginpage.
@@ -16,3 +16,6 @@ Results:
 auth page.
 -The console initially prints the request args as an empty immutable dictionary, but then
 once we inputted information, the immutable dictionary fills with the information we inputted.
+-When we tried to mess around with get and post, get gave us our webpage and there was stuff
+behind the initial URL. When we tried post, after we typed the username we were not able to access
+the webpage.
