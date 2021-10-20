@@ -21,3 +21,8 @@ Dev Console
 - Tells you whether GET or POST was used
 - Shows the url of the reested page, excluding the localhost
 - GET requests for routes other than the default "/" route are highlighted and show the full url including the extra GET characters
+
+Intertoobz Used
+- https://lazaroibanez.com/difference-between-the-http-requests-post-and-get-3b4ed40164c1#:~:text=GET%20is%20used%20for%20viewing,to%20insert%2Fupdate%20remote%20data.
+- https://runestone.academy/runestone/books/published/webfundamentals/Flask/sessions.html
+- https://flask.palletsprojects.com/en/2.0.x/quickstart/#redirects-and-errors
