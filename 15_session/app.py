@@ -52,7 +52,7 @@ def authenticate():
 def logout():
     ''' Logout user by deleting user from session dict. Redirects to loginpage'''
 
-    # Delete user
+    # Delete user. This try... except... block prevent an error from ocurring when the logout page is accessed from the login page
     try:
         session.pop('username')
     except KeyError:
