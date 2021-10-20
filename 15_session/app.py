@@ -53,7 +53,10 @@ def logout():
     ''' Logout user by deleting user from session dict. Redirects to loginpage'''
 
     # Delete user
-    session.pop('username')
+    try:
+        session.pop('username')
+    except KeyError:
+        return redirect(url_for('disp_loginpage'))
     # Redirect to login page
     return redirect(url_for('disp_loginpage'))
 
