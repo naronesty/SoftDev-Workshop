@@ -1,4 +1,4 @@
-#Noakai Aronesty
+#The Adjective Nouns: Noakai Aronesty, Andrew Juang, Eric Guo
 #SoftDev
 #K16 -- All About Database
 #2021-10-21
