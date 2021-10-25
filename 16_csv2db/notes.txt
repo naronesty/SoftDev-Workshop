@@ -119,4 +119,6 @@ db.close()
 Our Notes
 - At first we tried to use INSERT with C's printf notation
 - CREATE TABLE IF NOT EXIST does not return an error if that table already exists, however running this while it exists would add the same information again so it is still not advised
-- Due to the fact that we need quotations to write in SQL-style code, our INSERT INTO eventually became more like a string
+- Due to the fact that we need quotations to write in SQL-style code, our INSERT INTO became more like a string
+- Used "c.description" to get and print the names of the column names
+- Used "c.execute("SELECT * FROM courses")" in conjuction with "c.fetchall" to get and print the contents of the tables
