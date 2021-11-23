@@ -1,1 +1,6 @@
+HTTP Request
 
+- Looks like a dictionary
+- Very nice picture
+- Looks easy to parse in a program
+- Dev Console has some style
