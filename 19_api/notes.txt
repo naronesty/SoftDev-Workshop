@@ -1,12 +1,15 @@
-HTTP Request
+The Sad Hatters: Noakai Aronesty, Annabel Zhang
+SoftDev pd2
+K19 -- A RESTful Journey Skyward
+2021-11-23
 
+HTTP Request
 - Looks like a dictionary
 - Very nice picture
 - Looks easy to parse in a program
 - Dev Console has some style
 
 App
-
 - urllib3 IS STUPID AND DUMB
 - Used urllib instead
 - json lib is nice
