@@ -4,3 +4,10 @@ HTTP Request
 - Very nice picture
 - Looks easy to parse in a program
 - Dev Console has some style
+
+App
+
+- urllib3 IS STUPID AND DUMB
+- Used urllib instead
+- json lib is nice
+
