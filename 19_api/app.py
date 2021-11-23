@@ -1,3 +1,8 @@
+# The Sad Hatters: Noakai Aronesty, Annabel Zhang
+# SoftDev pd2
+# K19 -- A RESTful Journey Skyward
+# 2021-11-23
+
 import urllib.request
 from flask import *
 import json
