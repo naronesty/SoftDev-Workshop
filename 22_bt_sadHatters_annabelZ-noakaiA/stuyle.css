@@ -4,6 +4,7 @@
     2021-11-30<br>
     time spent: 2h
 */
+
 * {
 }
 
@@ -13,9 +14,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-.container {
-    .rounded
-    .p-4
 }
