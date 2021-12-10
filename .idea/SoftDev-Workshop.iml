@@ -4,8 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="WorkshopRepo" />
-    <orderEntry type="module" module-name="Python_3" />
+    <orderEntry type="module" module-name="P00" />
+    <orderEntry type="module" module-name="P01" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
