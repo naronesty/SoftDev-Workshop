@@ -1,3 +1,4 @@
+1/13
 Chose the Ubuntu OS
 Used the same ssh key as my Github one
 Basic plan
@@ -16,3 +17,11 @@ It seemed to work without breaking anything so yay.
 Also people told me to run
 `apt upgrade`
 because it would update my programs and it also seemed to not break anything. Cool
+
+1/14
+Well I looked at some guides and I need to have a user (shush).
+I used "rebuild droplet" to reset the droplet. I don't know if this was needed but sure.
+
+
+
+Works now, nice.
