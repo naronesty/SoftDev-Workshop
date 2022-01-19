@@ -29,12 +29,6 @@ Guide to creating a deploying a Flask app on Apache2
    ```
    cd FlaskApp
    ```
-    ```
-   sudo mkdir FlaskApp
-   ```
-   ```
-   cd FlaskApp
-   ```
    ```
    sudo mkdir static templates
    ```
