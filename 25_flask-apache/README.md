@@ -47,7 +47,7 @@ Guide to creating a deploying a Flask app on Apache2
    app = Flask(__name__)
    @app.route("/")
    def hello():
-   	return "Hello, I hate Digital Ocean!"
+   	return "Hello, I hate Apache2!"
    if __name__ == "__main__":
    	app.run()
    ```
