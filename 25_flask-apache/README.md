@@ -76,7 +76,7 @@ Guide to creating a deploying a Flask app on Apache2
    ```
    sudo nano /etc/apache2/sites-available/FlaskApp.conf
    ```
-   Change mywebsite.com to the IP, and FlaskApp to name of your flask app
+   Change "mywebsite.com" to the IP, "FlaskApp" to name of your flask app and "admin" to your user
    ```
    <VirtualHost *:80>
 		ServerName mywebsite.com
