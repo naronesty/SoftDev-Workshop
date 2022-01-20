@@ -1,0 +1,27 @@
+1/13
+Chose the Ubuntu OS
+Used the same ssh key as my Github one
+Basic plan
+The "create droplet" button seems so inviting but I'm scared it'll charge me.
+  -Tbh I'm more worried about Mykolyk's command to *not spend any money!* than the 5 dollars/month
+  
+Well I clicked it and it worked and the "Estimated Costs", which shows the amount of money I owe is still 0.00$ so we good.
+Easy interface and access to root console
+Droplet came with the right Ubuntu version already installed so I don't need to figure that out.
+
+I just looked up how to install apache2 from the terminal and was given:
+`sudo apt update`
+`sudo apt install apache2`
+It seemed to work without breaking anything so yay.
+
+Also people told me to run
+`apt upgrade`
+because it would update my programs and it also seemed to not break anything. Cool
+
+1/14
+Well I looked at some guides and I need to have a user (shush).
+I used "rebuild droplet" to reset the droplet. I don't know if this was needed but sure.
+
+
+
+Works now, nice.
