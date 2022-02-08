@@ -12,7 +12,7 @@
 ;(fact 4)
 ;(fact 8)
 
-(define (fibb n)
+(define (fib n)
    (helpy 1 1 (- n 2))
   )
 
@@ -26,22 +26,22 @@
          )
   )
 
-;(fibb 4)
-;(fibb 10)
-;(fibb 100)
+;(fib 4)
+;(fib 10)
+;(fib 100)
 
-(define fibbAlt
+(define fibAlt
   (lambda(n)
     (if (< n 2)
         n
-        (+ (fibbAlt(- n 1)) (fibbAlt (- n 2)))
+        (+ (fibAlt(- n 1)) (fibAlt (- n 2)))
     )
   )
 )
 
-;(fibbAlt 4)
-;(fibbAlt 10)
-;(fibbAlt 100) ;DO NOT USE
+;(fibAlt 4)
+;(fibAlt 10)
+;(fibAlt 100) ;DO NOT USE
 
 (define gcd
   (lambda(a b)
