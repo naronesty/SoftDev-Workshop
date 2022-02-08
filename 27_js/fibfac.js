@@ -28,3 +28,9 @@ function helpy(first, second, remain) {
 function fibb(n) {
     return helpy(1, 1, (n))
 }
+
+function gcd(a, b) {
+    if (a == b) return a
+    else if (a > b) return gcd((a - b), b)
+    else return gcd(a, (b - a))
+}
