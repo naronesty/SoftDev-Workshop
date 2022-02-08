@@ -25,7 +25,7 @@ function helpy(first, second, remain) {
     else return helpy(second, (first + second), (remain - 1))
 }
 
-function fibb(n) {
+function fib(n) {
     return helpy(1, 1, (n))
 }
 
