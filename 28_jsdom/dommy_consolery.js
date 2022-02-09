@@ -13,7 +13,7 @@ function fact(n) {
 
 fact(4)
 fact(5)
-fact(10)
+console.log("10 factorial: " + fact(10))
 
 function helpy(first, second, remain) {
     if (remain == 0) return second
@@ -27,7 +27,7 @@ function fib(n) {
 
 fib(3)
 fib(5)
-fib(99)
+console.log("99th fibonacci number: " + fib(99))
 
 function gcd(a, b) {
     if (a == b) return a
@@ -37,4 +37,4 @@ function gcd(a, b) {
 
 gcd(48, 18)
 gcd(18, 48)
-gcd(25, 125)
+console.log("greatest common factor of 25 and 125: " + gcd(25, 125))
