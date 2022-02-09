@@ -1,16 +1,8 @@
 // Team Adjective Nouns :: Noakai Aronesty, Kevin Cao
-// SoftDev pd0
-// K27 -- Basic functions in JavaScript
-// 2022-02-05
+// SoftDev pd2
+// K28
+// 2022-02-08
 // --------------------------------------------------
-
-
-// as a duo...
-// pair programming style,
-// implement a fact and fib fxn
-
-
-//Do whatever you think is needed. Think: S I M P L E.   Think: S M A R T.
 
 function fact(n) {
     if (n == 1) {
