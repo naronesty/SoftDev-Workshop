@@ -1,17 +1,7 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+Team Pineapple Smoothie :: Noakai Aronesty, Alif Abdullah
 SoftDev pd0
 K27 -- Basic functions in JavaScript
-2022-02-03r
+2022-02-08
 
-DISCO
------------------------------------------------------------------
-* This uses the epic way to fibb with a helper function so it can calculate much faster
-* Basically emulated a loop. "Tail recursion"
-* Tomas may have tipped me off that a helper function would be useful
-=================================================================
-
-QCC
------------------------------------------------------------------
-* How to make the stuff show on the actual html page?
-=================================================================
+Anything Notable
 
