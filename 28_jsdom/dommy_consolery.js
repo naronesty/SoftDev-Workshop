@@ -107,9 +107,20 @@ function gcd(a, b) {
     else return gcd(a, (b - a));
 }
 
-let fibEle = document.getElementById("fib");
-fibEle.innerHTML = (fib(99));
-let factEle = document.getElementById("fact");
-factEle.innerHTML = (fact(10));
-let gcdEle = document.getElementById("gcd");
-gcdEle.innerHTML = (gcd(18, 48));
+
+var fibEle = document.getElementById("fib");
+fibEle.addEventListener('click', function(){
+  var rando = Math.floor(Math.random() * 100);
+  fibEle.innerHTML = "fib(" + rando + ") = " + fib(rando);
+});
+var factEle = document.getElementById("fact");
+factEle.addEventListener('click', function(){
+  var rando = Math.floor(Math.random() * 20);
+  factEle.innerHTML = "fact(" + rando + ") = " + fact(rando);
+});
+var gcdEle = document.getElementById("gcd");
+gcdEle.addEventListener('click', function(){
+  var rando0 = (Math.floor(Math.random() * 10)) * 2;
+  var rando1 = (Math.floor(Math.random() * 8) + 5) * 4;
+  gcdEle.innerHTML = "gcd(" + rando0 + ", " + rando1 + ") = " + gcd(rando0, rando1);
+});
