@@ -1,7 +1,7 @@
-// Team Big Bird Apocalypse :: Noakai Aronesty, Shadman, Rakib, Alif Abdullah
+// Team Big Bird Apocalypse :: Noakai Aronesty, Shadman Rakib, Alif Abdullah
 // SoftDev pd2
-// K30 -- Copying code for fun
-// 2022-02-14
+// K31 -- Copying moar code for fun
+// 2022-02-15
 // 1000000 years
 
 
@@ -32,6 +32,9 @@ var growing = true;
 
 //var drawDot = function() {
 var drawDot = () => {
+  if (requestID) {cancelAnimationFrame(requestID);}
+  // dotButton.removeEventListener("click", drawDot);
+
   console.log("drawDot invoked...")
 
   if (growing) { radius++; }
@@ -45,8 +48,6 @@ var drawDot = () => {
   ctx.fill();
 
   requestID = requestAnimationFrame(drawDot)
-
-  dotButton.removeEventListener("click", drawDot);
 
   /*
     ...to
@@ -64,13 +65,12 @@ var drawDot = () => {
 
 //var stopIt = function() {
 var stopIt = () => {
+  // dotButton.addEventListener("click", drawDot);
+
   console.log("stopIt invoked...")
   console.log(requestID);
 
   cancelAnimationFrame(requestID);
-  ctx.clearRect(0, 0, 500, 500);
-  radius = 1;
-  dotButton.addEventListener("click", drawDot);
 
   /*
     ...to
