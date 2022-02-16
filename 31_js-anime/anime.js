@@ -30,13 +30,23 @@ var clear = (e) => {
 var radius = 0;
 var growing = true;
 
-
 //var drawDot = function() {
 var drawDot = () => {
   console.log("drawDot invoked...")
 
-  
-  // YOUR CODE HERE
+  if (growing) { radius++; }
+  else { radius--; }
+  if (radius <= 1) { growing = true; }
+  if (radius >= 249) { growing = false; }
+
+  ctx.clearRect(0, 0, 500, 500);
+  ctx.beginPath();
+  ctx.arc(250, 250, radius, 0, 2 * Math.PI);
+  ctx.fill();
+
+  requestID = requestAnimationFrame(drawDot)
+
+  dotButton.removeEventListener("click", drawDot);
 
   /*
     ...to
@@ -52,13 +62,16 @@ var drawDot = () => {
    */
 };
 
-
 //var stopIt = function() {
 var stopIt = () => {
   console.log("stopIt invoked...")
-  console.log( requestID );
+  console.log(requestID);
 
-  // YOUR CODE HERE
+  cancelAnimationFrame(requestID);
+  ctx.clearRect(0, 0, 500, 500);
+  radius = 1;
+  dotButton.addEventListener("click", drawDot);
+
   /*
     ...to
     Stop the animation
@@ -69,5 +82,5 @@ var stopIt = () => {
 };
 
 
-dotButton.addEventListener( "click", drawDot );
-stopButton.addEventListener( "click",  stopIt );
+dotButton.addEventListener("click", drawDot);
+stopButton.addEventListener("click", stopIt);
