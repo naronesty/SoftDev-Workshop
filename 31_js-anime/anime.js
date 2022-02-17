@@ -42,7 +42,7 @@ var drawDot = () => {
   if (radius <= 1) { growing = true; }
   if (radius >= 249) { growing = false; }
 
-  ctx.clearRect(0, 0, 500, 500);
+  clear(ctx);
   ctx.beginPath();
   ctx.arc(250, 250, radius, 0, 2 * Math.PI);
   ctx.fill();
