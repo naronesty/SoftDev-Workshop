@@ -43,8 +43,9 @@ let drawDot = () => {
   console.log("drawDot invoked...")
 
   clear(c);
-  window.cancelAnimationFrame(requestID);
-  if (growing) {
+  if (requestID) {
+    cancelAnimationFrame(requestID);
+  }  if (growing) {
     radius += 1;
   } else {
     radius -= 1;
