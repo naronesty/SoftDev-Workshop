@@ -1,89 +1,99 @@
-// Team Big Bird Apocalypse :: Noakai Aronesty, Shadman Rakib, Alif Abdullah
-// SoftDev pd2
-// K31 -- Copying moar code for fun
-// 2022-02-15
-// 1000000 years
+// Math.randomers -- Andy Lin, Noakai Aronesty
+// Softdev pd2
+// K32 -- canvas based JS animation now with DVD
+// 2022-02-17
+
+// model for HTML5 canvas-based animation
+
+// SKEELTON
 
 
 //access canvas and buttons via DOM
-var c = document.getElementById('playground')
-var dotButton = document.getElementById('buttonCircle')
-var waitButton = document.getElementById('buttonWait');
-var stopButton = document.getElementById('buttonStop')
-
-//prepare to interact with canvas in 2D
-var ctx = c.getContext("2d");
-
-//set fill color to team color
-ctx.fillStyle = 'BlueViolet'
-
-var requestID;  //init global var for use with animation frames
-
-
-//var clear = function(e) {
-var clear = (e) => {
-  console.log("clear invoked...")
-
-  // YOUR CODE HERE
-};
-
-
-var radius = 0;
-var growing = true;
-var changeX = 1;
-var changeY = 1;
-var posX = Math.random() * c.offsetWidth;
-var posY = Math.random() * c.offsetHeight;
+let c = document.getElementById("playground");// GET CANVAS
+let dotButton = document.getElementById("buttonCircle"); // GET DOT BUTTON
+let stopButton = document.getElementById("buttonStop");// GET STOP BUTTON
+let dvdButton = document.getElementById("buttonDvd");// GET DVD BUTTON
 
 var dvdLogo = new Image();
 dvdLogo.src = "logo_dvd.jpg";
 
-//var drawDot = function() {
-  var drawDot = () => {
-    if (requestID) {
-      cancelAnimationFrame(requestID);
-    }
-    // dotButton.removeEventListener("click", drawDot);
-  
-    console.log("drawDot invoked...")
-  
-    if (growing) { radius++; }
-    else { radius--; }
-    if (radius <= 1) { growing = true; }
-    if (radius >= 249) { growing = false; }
-  
-    clear(ctx);
-    ctx.beginPath();
-    ctx.arc(250, 250, radius, 0, 2 * Math.PI);
-    ctx.fill();
-  
-    requestID = requestAnimationFrame(drawDot)
-  
-    /*
-      ...to
-      Wipe the canvas,
-      Repaint the circle,
-  
-      ...and somewhere (where/when is the right time?)
-      Update requestID to propagate the animation.
-      You will need
-      window.cancelAnimationFrame()
-      window.requestAnimationFrame()
-  
-     */
-  };
+//prepare to interact with canvas in 2D
+let ctx = c.getContext("2d");
+
+//set fill color to team color
+ctx.fillStyle = "light blue";
+
+let requestID;  //init global let for use with animation frames
+
+//let clear = function(e) {
+let clear = (e) => {
+  console.log("clear invoked...");
+  ctx.clearRect(0, 0, c.offsetWidth, c.offsetHeight);;
+};
+
+let radius = 0;
+let growing = true;
+var changeX = 1;
+var changeY = 1;
+var posX = Math.random() * (c.offsetWidth - 75);
+var posY = Math.random() * (c.offsetHeight - 50);
+
+//let drawDot = function() {
+let drawDot = () => {
+  console.log("drawDot invoked...")
+
+  clear(c);
+  window.cancelAnimationFrame(requestID);
+  if (growing) {
+    radius += 1;
+  } else {
+    radius -= 1;
+  }
+  ctx.beginPath();
+  ctx.arc(c.offsetHeight / 2, c.offsetWidth / 2, radius, 0, 360);
+  ctx.fillStyle = "orange"
+  ctx.fill();
+  console.log(requestID);
+  requestID = window.requestAnimationFrame(drawDot);
+  if (radius >= c.offsetHeight / 2) {
+    growing = false
+  } else if (radius <= 0){
+    growing = true
+  }
+
+  /*
+    ...to
+    Wipe the canvas,
+    Repaint the circle,
+
+    ...and somewhere (where/when is the right time?)
+    Update requestID to propagate the animation.
+    You will need
+    window.cancelAnimationFrame()
+    window.requestAnimationFrame()
+
+   */
+};
+
+var drawDVDButtonFunc = () => {
+  console.log(posX)
+  console.log(posY)
+  posX = Math.random() * (c.offsetWidth - 75);
+  posY = Math.random() * (c.offsetHeight - 50);
+  drawDVD()
+}
 
 var drawDVD = () => {
-  console.log("nooooooo")
+  console.log(requestID)
 
   if (requestID) {
     cancelAnimationFrame(requestID);
   }
 
-  if (posX <= 1 || posX >= 500-75) {
+  if (posX <= 0 || posX >= c.offsetWidth - 75) {
     changeX *= -1;
   }
-  if (posY <= 1 || posY >= 500-50) {
+  if (posY <= 0 || posY >= c.offsetHeight - 50) {
     changeY *= -1;
   }
 
@@ -94,28 +104,16 @@ var drawDVD = () => {
   ctx.drawImage(dvdLogo, posX, posY, 75, 50);
 
   requestID = requestAnimationFrame(drawDVD)
-
 }
 
-//var stopIt = function() {
-var stopIt = () => {
-  // dotButton.addEventListener("click", drawDot);
-
+//let stopIt = function() {
+let stopIt = () => {
   console.log("stopIt invoked...")
-  console.log(requestID);
-
-  cancelAnimationFrame(requestID);
-
-  /*
-    ...to
-    Stop the animation
-
-    You will need
-    window.cancelAnimationFrame()
-  */
+  console.log( requestID );
+  window.cancelAnimationFrame(requestID);
 };
 
 
-dotButton.addEventListener("click", drawDot);
-waitButton.addEventListener("click", drawDVD);
-stopButton.addEventListener("click", stopIt);
+dotButton.addEventListener( "click", drawDot );
+stopButton.addEventListener( "click",  stopIt );
+dvdButton.addEventListener( "click",  drawDVDButtonFunc );
