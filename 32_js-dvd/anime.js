@@ -51,7 +51,7 @@ let drawDot = () => {
   }
   ctx.beginPath();
   ctx.arc(c.offsetHeight / 2, c.offsetWidth / 2, radius, 0, 360);
-  ctx.fillStyle = "orange"
+  ctx.fillStyle = "BlueViolet"
   ctx.fill();
   console.log(requestID);
   requestID = window.requestAnimationFrame(drawDot);
