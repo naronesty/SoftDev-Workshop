@@ -2,3 +2,8 @@ Math.randomers -- Andy Lin, Noakai Aronesty
 Softdev pd2
 K32 -- canvas based JS animation now with DVD
 2022-02-17
+
+- Wrapper function for drawDVD was useful for randomizing the DVD logo's position on button click.
+- Did not need to change animation cancelation properties of the draw() functions because there is only one animation frame active at a time
+- Image() will create an image with no properties
+- drawImage() actually renders the image with dimentions, the image object itslef can have dimentions, but they are overriden by drawImage()
